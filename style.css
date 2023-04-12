@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  padding: 1rem 3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 60px;
+}
+
+.nav-li {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  margin-left: 40px;
+  list-style: none;
+}
+
+.li-tag a {
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+}
+
+.li-tag a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+.batch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.batch-text {
+  font-size: 16px;
+  margin: 0 30px;
+  padding-top: 40px;
+}
+
+.batch-logo {
+  margin-top: 40px;
+  margin-right: 50px;
+  height: 250px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100px;
+}
+
+.card-tag {
+  padding-top: 8px;
+}
+
+.meet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meet-logo {
+  margin-left: 50px;
+  height: 250px;
+}
+
+.meet-text {
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.library-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.library-text {
+  font-size: 16px;
+  margin:0 30px;
+}
+
+.library-logo {
+  margin-right: 50px;
+  height: 250px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  width: 100%;
+  margin-top: 100px;
+  overflow: auto;
+  font-size: 14px;
+}
+
+/* Media Query */
+
+/* 
+
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+
+*/
+
+@media only screen and (max-width: 769px) {
+  nav {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  nav ul {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .batch-logo,
+  .meet-logo,
+  .library-logo {
+    margin: 30px auto;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .batch-container,.library-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .meet-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .card {
+    font-size: 14px;
+    gap: 10px;
+    flex-direction: column;
+  }
+}
